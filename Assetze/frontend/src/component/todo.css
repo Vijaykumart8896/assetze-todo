@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+#TodoSection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#TodoSection > h1 {
+  letter-spacing: 1px;
+  color: royalblue;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+#TodoSection > form {
+  height: 10vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+#TodoSection > form > div > input {
+  padding: 0;
+  outline: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+::placeholder {
+  color: blueviolet;
+}
+#TodoSection > form > div > button {
+  border: none;
+  background: #777;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#TodoSection > form > div > button:hover {
+  background: rosybrown;
+}
+#TodoSection > div {
+  height: 55vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+ scroll-behavior: smooth;
+}
+#editOrdelete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#editOrdelete > button {
+  border: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#editOrdelete > button:hover {
+  background: green;
+}
+#editOrdelete > button:nth-child(2):hover {
+  background: red;
+}
+#allUserSection {
+  width: 500px;
+  height: 600px;
+  box-shadow: 1px 1px 1px 1px #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+#userDiv {
+  display: flex;
+  gap: 20px;
+}
+#userDiv > div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
